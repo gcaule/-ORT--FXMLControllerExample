@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+//Créer le fichier FXML puis l'ouvrir avec Scene Builder avec un click droit
+//On accroche les ID crées dans le controlleur via Scene Builder
+
+<AnchorPane prefHeight="48.0" prefWidth="522.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="application.view.loginFormController">
+   <children>
+      <HBox prefHeight="47.0" prefWidth="512.0" spacing="20.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label text="Veuillez écrire: " />
+            <TextField fx:id="tfInputText" />
+            <Button mnemonicParsing="false" onAction="#handleclickMe" text="Click me!" />
+            <Label text="Résultat: " />
+            <Label fx:id="labOutputText" text="Label" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
